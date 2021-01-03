@@ -1,6 +1,6 @@
 <?php
 
-namespace tegic\qiniu;
+namespace xzhiyu\qiniu;
 
 use Qiniu\Auth;
 use Qiniu\Storage\UploadManager;
