@@ -4,12 +4,12 @@ thinkphp-qiniu-sdk
 
 composer 安装
 
-```composer require teg1c/thinkphp-qiniu-sdk```
+```composer require xzhiyu/thinkphp-qiniu-sdk```
 
 
 如果该方法安装不成功，请在项目根目录下的composer.json的require中添加
 
-```"teg1c/thinkphp-qiniu-sdk": "dev-master"```
+```"xzhiyu/thinkphp-qiniu-sdk": "dev-master"```
 
 然后使用cmd进入项目根目录下运行composer update
 
@@ -34,7 +34,7 @@ composer 安装
 ## 使用
 
 ```
-use tegic\qiniu\Qiniu;
+use xzhiyu\qiniu\Qiniu;
 try{
       
       $qiniu = new Qiniu();
@@ -72,5 +72,5 @@ try{
  第二个参数默认为配置里的bucket
 
 
-如果使用中有任何错误或者疑问可以给我发邮件：i@izww.cn
+如果使用中有任何错误或者疑问可以给我发邮件：fzwl@fzxywl.cn
 
