@@ -109,13 +109,15 @@ class Qiniu
             throw new Exception('请填写名称');
         }
 
-        $formUploader = new FormUploader();
+        // $formUploader = new FormUploader();
 
 //        $resumeUpload = new ResumeUploader($toke, $data['file_name'], $stream, $data['size'], '', $mine, '');
 //
 //        $ret = $resumeUpload->upload();
 
-        $ret = $formUploader->put($toke, $data['file_name'], $stream, '','', $mine, false);
+        $uploadManager = new UploadManager();
+
+        $ret = $uploadManager->put($toke, $data['file_name'], $stream, null, $mine, $data['file_name']);
 
         return $ret;
 
